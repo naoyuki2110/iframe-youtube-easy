@@ -1,0 +1,14 @@
+<html><head>
+<title>簡易iframe from YouTubeフォーム</title>
+<script language="JavaScript">
+function clickBtn()
+{
+const val = hzmain.value;
+document.getElementById("ifr").src = "https://youtube.com/search?q=" + val;
+}
+</script>
+</head>
+</head><body><p>表示したいYouTubeのワードを張り付けてください</p><br>
+<textarea id="hzmain" value="https://google.com" name="hzmain2" cols="70" rows="4" placeholder="ワードを入力"></textarea><br><form><input type="button" value="表示する！" onClick="clickBtn()"></form><br><br>
+<iframe id="ifr" src="https://example.com" name="irm" width="1000" height="750" /></body>
+</html>
